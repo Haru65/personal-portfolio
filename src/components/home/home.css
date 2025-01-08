@@ -1,0 +1,56 @@
+.Q1{
+    
+    text-align: end;
+    margin-top: 150px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    font-weight: 1500;
+    font-size: 50px;
+    white-space: "nowrap";
+    overflow: hidden;
+    border-right: 5px solid;
+    animation: 
+        typing 2s steps(20),
+        cursor .4s step-end infinite alternate;
+
+}
+@keyframes cursor{
+ 50%{ border-color: transparent;}
+}
+@keyframes typing{
+    from{width: 0}
+}
+
+.Homie{
+  
+    height: 100%;
+}
+.Name{
+    
+    margin: 20px;
+    
+    font-size: 50px;
+}
+.description{
+    
+    text-align: start;
+    margin-right: 30%;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+
+@media (max-width:480px){
+    .description{
+        margin: 10%;
+        font-size: 1.3rem;
+    }
+    .Q1{
+        font-size: 2rem;
+    }
+    .Name{
+        font-size: 2.3rem;
+        padding-left: 5%;
+    }
+}

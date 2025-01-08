@@ -1,0 +1,24 @@
+.name{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    
+}
+.footermain{
+    background: #090909; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    margin-top: 1%;
+    align-items: center;
+}
+.bar{
+
+    background-color: black;
+    height: 0.2rem;
+    margin-top: 10%;
+    width: 70%;
+   margin-left: 15%;
+    
+}

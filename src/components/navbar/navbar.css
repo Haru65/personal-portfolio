@@ -1,0 +1,108 @@
+.Navbar{
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+    background-image: radial-gradient(transparent 1px, var(--circle-color, hsl(0, 0%, 11%)) 1px,transparent 1px, 
+    var(--circle-color, hsl(0, 0%, 12%)) 10px);
+  background-size: 20px 20px; /* Adjust for spacing between circles */
+  background-color: transparent; /* Transparent base */
+  background-blend-mode: overlay; /* Optional for blending */
+
+}
+
+.ul{
+    list-style: none;
+    text-align: center;
+    flex: 1;
+  
+    
+}
+
+.ul li{
+    cursor: pointer;
+    display:inline-block;
+    margin: 10px,10px;
+    font-size: 16px;
+    padding-inline: 5%;
+    font-size: 20px;
+ 
+}
+nav .menu{
+    display: none;
+    top: 0.75;
+    right: 0.5rem;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.2rem;
+    height: 2rem;
+    z-index: 1111;
+
+}
+nav .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 0.2rem;
+}
+.logo{
+    height:60px ;
+    
+}
+@media (max-width: 480px){
+   nav .menu{
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+    nav{
+        flex-direction: column;
+        align-items: start;
+        display: flex;
+    }
+    
+    nav .ul {
+        justify-content: space-around;
+        align-content: space-around;
+        padding: 2rem;
+       display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.2rem; 
+    }
+    nav .ul.menuopen{
+        display: flex;
+        z-index: 1111;
+        justify-content: space-around;
+        
+    }
+    nav .ul.menuopen li{
+        margin: 0.3rem;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+        z-index: 10000;
+        
+    }
+}
+html {
+    scroll-behavior: smooth;
+    transition: 4s;
+  }
+  
+  .Navbar .ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .Navbar .ul li a:hover {
+    color: #f0a500;
+  }
+  
