@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import hutao from "../../assets/hutao.gif";
+ // assuming assets is in the same folder as the component
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="Navbar">
-      <img src="./src/assets/hutao.gif" alt="logo" className="logo" />
+      <img src={hutao} alt="logo" className="logo" />
       <div
         className="menu"
         onClick={() => {

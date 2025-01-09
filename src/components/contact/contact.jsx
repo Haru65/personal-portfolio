@@ -1,6 +1,11 @@
 import React from "react";
 import "./contact.css";
 import { motion } from "framer-motion";
+
+
+import github from "../../assets/socials/git.png"
+import linkedin from "../../assets/socials/linkedin.png"
+import mail from "../../assets/socials/mail.png"
 function Contactpage(){
     return(<>
        
@@ -16,15 +21,15 @@ function Contactpage(){
             }} >
             <div className="socials">
                 <a href="https://www.linkedin.com/in/aditya-khandagale-745a8a232/" target="_blank"> 
-                     <img className="emotes"src="./src/assets/socials/linkedin.png"  alt="linkedin" />
+                     <img className="emotes"src={linkedin}  alt="linkedin" />
                     </a> 
                 <a href="https://github.com/Haru65" target="_blank">
 
-                <img className="emotes"src="./src/assets/socials/git.png" alt="github" />
+                <img className="emotes"src={github} alt="github" />
                 </a>
                 
                 <a href="mailto:adityakhandagale69@gmail.com">
-                    <img className="emotes"src="./src/assets/socials/mail.png" alt="mail" />
+                    <img className="emotes"src={mail} alt="mail" />
                     </a>
                    
                       
